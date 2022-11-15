@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'springbootwebapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F532C669B6C14F96A09CBD15B273144D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_393EFBE1B2414A5C9A7D6416A0D309AF }}
           package: '*.war'
