@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ruiz.spring.jpa.postgresql.repository.PruebaRepository;
 
-@CrossOrigin(origins = "http://localhost:8081")
+//@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/api")
 public class PruebaController {
