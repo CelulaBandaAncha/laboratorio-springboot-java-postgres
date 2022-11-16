@@ -38,10 +38,14 @@ jobs:
 
     steps:
       - name: Download artifact from build job
-        uses: actions/download-artifact@v2
+        uses: actions/checkout@v2
         with:
           name: spring-boot-jpa-postgresql
-
+      
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
+        working-directory: laboratorio-springboot-java-postgres
+      
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
