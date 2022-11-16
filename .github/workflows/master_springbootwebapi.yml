@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: spring-boot-jpa-postgresql-0.0.1-SNAPSHOT
-          path: '${{ github.workspace }}/target/*.jar'
+          path: 'spring-boot-jpa-postgresql/target/*.jar'
 
   deploy:
     runs-on: ubuntu-latest
