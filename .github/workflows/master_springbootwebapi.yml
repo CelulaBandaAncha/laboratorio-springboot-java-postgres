@@ -45,4 +45,4 @@ jobs:
           app-name: 'springbootwebapi'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6335D86C46544E44856A6E74D7EE52C7 }}
-          package: 'laboratorio-springboot-java-postgres/target/*.jar'
+          package: '${{ github.workspace }}/target/*.jar'
